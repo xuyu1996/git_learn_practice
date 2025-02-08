@@ -279,7 +279,9 @@ $ git pull [remote] [branch]
 
 # 上传本地指定分支到远程仓库
 $ git push [remote] [branch]
-
+```
+![alt text](image-40.png)
+```bash
 # 强行推送当前分支到远程仓库，即使有冲突
 $ git push [remote] --force
 
