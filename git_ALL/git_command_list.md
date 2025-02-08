@@ -284,7 +284,9 @@ $ git push [remote] [branch]
 ```bash
 # 强行推送当前分支到远程仓库，即使有冲突
 $ git push [remote] --force
-
+```
+![alt text](image-48.png)
+```bash
 # 推送所有分支到远程仓库
 $ git push [remote] --all
 ```
