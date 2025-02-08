@@ -255,8 +255,6 @@ $ git show [commit]:[filename]
 $ git reflog
 ```
 ![alt text](image-38.png)
-```bash
-
 
 ### 远程同步
 ```bash
@@ -268,6 +266,7 @@ $ git remote -v
 
 # 显示某个远程仓库的信息
 $ git remote show [remote]
+
 ```
 ![alt text](image-39.png)
 ```bash
@@ -281,6 +280,7 @@ $ git pull [remote] [branch]
 $ git push [remote] [branch]
 ```
 ![alt text](image-40.png)
+![alt text](image-42.png)
 ```bash
 # 强行推送当前分支到远程仓库，即使有冲突
 $ git push [remote] --force
@@ -288,6 +288,9 @@ $ git push [remote] --force
 # 推送所有分支到远程仓库
 $ git push [remote] --all
 ```
+![alt text](image-43.png)
+
+
 
 ### 撤销
 ```bash
