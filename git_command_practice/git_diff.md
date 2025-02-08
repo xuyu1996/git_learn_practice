@@ -41,3 +41,60 @@ index 1234567..89abcde 100644
 ### 总结
 - `git diff` 关注的是工作区和暂存区的差异，只显示未添加到暂存区的修改。
 - `git diff HEAD` 关注的是工作区和最新提交的差异，显示自上次提交以来所有未提交的修改，包括已添加到暂存区和未添加到暂存区的修改。 
+
+
+
+在 Git 里，若要比较暂存区和 `HEAD`（即当前分支的最新提交）之间的差异，可借助 `git diff --staged` （在较旧版本的 Git 中使用 `git diff --cached` ）命令。下面为你详细介绍该命令的使用方法及相关示例：
+
+### 使用 `git diff --staged` 命令
+#### 基本语法
+```bash
+git diff --staged
+```
+当你对工作区的文件进行修改后，使用 `git add` 命令将这些修改添加到暂存区。此时，`git diff --staged` 就会展示暂存区中的内容和 `HEAD` 所指向的提交之间的差异。
+
+#### 示例
+假设你有一个文件 `example.txt`，文件内容原本如下：
+```plaintext
+This is the original content.
+```
+你对该文件进行了修改，新内容如下：
+```plaintext
+This is the modified content.
+```
+接着，你使用 `git add` 命令将修改添加到暂存区：
+```bash
+git add example.txt
+```
+然后，运行 `git diff --staged` 命令来查看暂存区和 `HEAD` 的差异：
+```bash
+git diff --staged
+```
+命令输出可能如下：
+```plaintext
+diff --git a/example.txt b/example.txt
+index 1234567..89abcde 100644
+--- a/example.txt
++++ b/example.txt
+@@ -1 +1 @@
+-This is the original content.
++This is the modified content.
+```
+上述输出清晰地显示出 `example.txt` 文件中被修改的行，以 `-` 开头的行表示被删除的内容，以 `+` 开头的行表示新增的内容。
+
+### `git diff --cached` （适用于旧版本 Git）
+在较旧版本的 Git 中，使用 `git diff --cached` 来实现相同的功能，其用法和 `git diff --staged` 一致：
+```bash
+git diff --cached
+```
+
+### 结合其他选项
+你还能结合一些选项来进一步定制输出，例如：
+- **`--name-only`**：仅显示有差异的文件名称，而不显示具体的修改内容。
+```bash
+git diff --staged --name-only
+```
+- **`--color-words`**：以单词为单位显示差异，并且用颜色区分不同的部分，便于更清晰地查看修改情况。
+```bash
+git diff --staged --color-words
+``` 
