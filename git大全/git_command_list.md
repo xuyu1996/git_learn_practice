@@ -206,16 +206,23 @@ $ git log -5 --pretty --oneline
 ```bash
 # 显示所有提交过的用户，按提交次数排序
 $ git shortlog -sn
-
+```
+![alt text](image-29.png)
+```bash
 # 显示指定文件是什么人在什么时间修改过
 $ git blame [file]
-
+```
+![alt text](image-30.png)
+![alt text](image-31.png)
+```bash
 # 显示暂存区和工作区的差异
 $ git diff
 
 # 显示暂存区和上一个commit的差异
 $ git diff --cached [file]
-
+```
+![alt text](image-32.png)
+```bash
 # 显示工作区与当前分支最新commit之间的差异
 $ git diff HEAD
 
