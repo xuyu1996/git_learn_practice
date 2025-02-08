@@ -299,19 +299,29 @@ $ git checkout [file]
 
 # 恢复某个commit的指定文件到暂存区和工作区
 $ git checkout [commit] [file]
-
+```
+![alt text](image-41.png)
+```bash
 # 恢复暂存区的所有文件到工作区
 $ git checkout .
-
+```
+![alt text](image-44.png)
+```bash
 # 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变
 $ git reset [file]
-
+```
+![alt text](image-45.png)
+```bash
 # 重置暂存区与工作区，与上一次commit保持一致
 $ git reset --hard
-
+```
+![alt text](image-46.png)
+```bash
 # 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变
 $ git reset [commit]
-
+```
+![alt text](image-47.png)
+```bash
 # 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致
 $ git reset --hard [commit]
 

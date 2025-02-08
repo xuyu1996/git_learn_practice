@@ -100,3 +100,4 @@ git diff --staged --color-words
 ``` 
 
 
+![alt text](image-3.png)
