@@ -12,12 +12,16 @@ $ git init [project-name]
 
 # 下载一个项目和它的整个代码历史
 $ git clone [url]
-```
 
+```
+![alt text](image-14.png)
+![alt text](image-15.png)
 ### 配置
 ```bash
 # 显示当前的Git配置
 $ git config --list
+
+
 
 # 编辑Git配置文件
 $ git config -e [--global]
@@ -26,7 +30,9 @@ $ git config -e [--global]
 $ git config [--global] user.name "[name]"
 $ git config [--global] user.email "[email address]"
 ```
-
+![alt text](image-16.png)
+![alt text](image-17.png)
+![alt text](image-18.png)
 ### 增加/删除文件
 ```bash
 # 添加指定文件到暂存区
@@ -154,32 +160,50 @@ $ git checkout -b [branch] [tag]
 ```bash
 # 显示有变更的文件
 $ git status
-
+```
+![alt text](image-19.png)
+```bash
 # 显示当前分支的版本历史
 $ git log
-
+```
+![alt text](image-20.png)
+```bash
 # 显示commit历史，以及每次commit发生变更的文件
 $ git log --stat
-
+```
+![alt text](image-21.png)
+```bash
 # 搜索提交历史，根据关键词
 $ git log -S [keyword]
-
+```
+![alt text](image-23.png)
+```bash
 # 显示某个commit之后的所有变动，每个commit占据一行
-$ git log [tag] HEAD --pretty=format:%s
+$ git log [tag] HEAD --pretty=format:%s 
 
 # 显示某个commit之后的所有变动，其"提交说明"必须符合搜索条件
 $ git log [tag] HEAD --grep feature
+```
+![alt text](image-24.png)
 
+```bash
 # 显示某个文件的版本历史，包括文件改名
 $ git log --follow [file]
 $ git whatchanged [file]
-
+```
+![alt text](image-25.png)
+![alt text](image-26.png)
+```bash
 # 显示指定文件相关的每一次diff
 $ git log -p [file]
-
+```
+![alt text](image-27.png)
+```bash
 # 显示过去5次提交
 $ git log -5 --pretty --oneline
-
+```
+![alt text](image-28.png)
+```bash
 # 显示所有提交过的用户，按提交次数排序
 $ git shortlog -sn
 
