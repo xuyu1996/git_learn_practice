@@ -268,7 +268,9 @@ $ git remote -v
 
 # 显示某个远程仓库的信息
 $ git remote show [remote]
-
+```
+![alt text](image-39.png)
+```bash
 # 增加一个新的远程仓库，并命名
 $ git remote add [shortname] [url]
 
