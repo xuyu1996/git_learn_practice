@@ -342,7 +342,7 @@ $ git stash
 $ git stash pop
 
 ```
-
+![alt text](image-49.png)
 ### 其他
 ```bash
 # 生成一个可供发布的压缩包
